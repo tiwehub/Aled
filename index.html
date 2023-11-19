@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/toastr.css">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" type="text/css" href="css/slick_slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick_slick-theme.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <a href="index.html" >Aled</a>
+</head>
+
+<body>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <!-- <canvas id="noiseCanvas"></canvas> -->
+    <div class="circle circles" style="top: 100px; left: 100px;"></div>
+    <div class="circle circles" style="top: 1000px; right: 100px; width: 200px;"></div>
+    <div class="circle circles" style="top: 1700px; left: 100px; width: 200px;"></div>
+    <div class="circle circles" style="top: 2500px; right: 100px; width: 200px;"></div>
+    <div class="container">
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light header-bg-custom rounded-bottom py-4 shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" width="100px" alt="Логотип">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end offcanvas-fullscreen" id="navbarNav">
+                        <div class="offcanvas-header mt-3">
+                            <button type="button" class="btn-close text-reset ms-auto shadow-none" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-uppercase fw-bold"
+                                        href="#products-slider">Светильники</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-uppercase fw-bold" href="#info-review">Отзывы</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-uppercase fw-bold" href="#about">О нас</a>
+                                </li>
+                                <hr>
+                            </ul>
+                            <div class="d-flex flex-column flex-lg-row">
+                                <button id="change-theme"
+                                    class="btn btn-primary btn-theme-custom me-0 mb-3 me-lg-2 mb-lg-0" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                        class="fa-solid fa-eye"></i></button>
+                                <button class="btn btn-primary btn-fill-custom" onclick="document.location='https:\\wa.me/+77074829370'"><i
+                                        class="pe-2 fa-solid fa-cart-shopping"
+                                        ></i>Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="Products" class="animated-element" data-animation-duration="0.8">
+            <div id="info-products"
+                class="animated-element d-flex flex-column align-items-center justify-content-center mt-4"
+                data-animation-duration="0.8">
+                <h2 class="text-uppercase fw-bold">Подсветите ваш мир</h2>
+                <h6 class="text-custom text-uppercase fw-bold">настенными светильниками LED</h6>
+            </div>
+            <div id="products-slider" class="rounded mt-3">
+                <div class="slide">
+                    <img src="img/1.jpg" alt="Изображение 1">
+                </div>
+                <div class="slide">
+                    <img src="img/2.jpg" alt="Изображение 2">
+                </div>
+                <div class="slide">
+                    <img src="img/3.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/4.jpg" alt="Изображение 1">
+                </div>
+                <div class="slide">
+                    <img src="img/5.jpg" alt="Изображение 2">
+                </div>
+                <div class="slide">
+                    <img src="img/6.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/7.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/8.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/9.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/10.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/11.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/12.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/13.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/14.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/15.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/16.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/17.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/18.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/19.jpg" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="img/20.jpg" alt="Изображение 3">
+                </div>
+            </div>
+        </section>
+        <section id="Lamps-desc" class="mb-3">
+            <div id="info-lamps-desc" class="animated-element d-flex flex-column align-items-center justify-content-center mt-4"
+                data-animation-duration="0.8">
+                <h2 class="text-uppercase fw-bold text-center">Светильники в стиле аниме</h2>
+                <h6 class="text-custom text-uppercase fw-bold">особенности светильников</h6>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <div class="animated-element bg-transp p-3 rounded lamp-card d-flex flex-column justify-content-center align-items-center"
+                        data-animation-duration="0.8">
+                        <div
+                            class="features-bg custom-fa-bg bg-transp d-flex align-items-center justify-content-center p-5 rounded-circle mb-4">
+                            <i class="custom-fa fa-solid fa-face-smile"></i>
+                        </div>
+                        <h4 class="mb-2 font-size-custom">Уникальность</h4>
+                        <p class="text-center">Вдохновлены популярными аниме.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div
+                        class="animated-element bg-transp p-3 rounded lamp-card d-flex flex-column justify-content-center align-items-center" data-animation-duration="0.8">
+                        <div
+                            class="features-bg custom-fa-bg bg-transp d-flex align-items-center justify-content-center p-5 rounded-circle mb-4">
+                            <i class="custom-fa fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h4 class="mb-2 font-size-custom">Яркость</h4>
+                        <p class="text-center">Обеспечивают яркое освещение.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div
+                        class="animated-element bg-transp p-3 rounded lamp-card d-flex flex-column justify-content-center align-items-center" data-animation-duration="0.8">
+                        <div
+                            class="features-bg custom-fa-bg bg-transp d-flex align-items-center justify-content-center p-5 rounded-circle mb-4">
+                            <i class="custom-fa fa-solid fa-paintbrush"></i>
+                        </div>
+                        <h4 class="mb-2 font-size-custom">Разнообразие</h4>
+                        <p class="text-center">Доступны в различных стилях.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div
+                        class="animated-element bg-transp p-3 rounded lamp-card d-flex flex-column justify-content-center align-items-center" data-animation-duration="0.8">
+                        <div
+                            class="features-bg custom-fa-bg bg-transp d-flex align-items-center justify-content-center p-5 rounded-circle mb-4">
+                            <i class="custom-fa fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <h4 class="mb-2 font-size-custom">Эффекты</h4>
+                        <p class="text-center">Специальные эффекты освещения.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="about">
+            <div id="info-about" class="d-flex flex-column align-items-center justify-content-center animated-element"
+                data-animation-duration="0.8">
+                <h2 class="text-uppercase fw-bold">О нас</h2>
+                <h6 class="text-custom text-uppercase fw-bold">Кто мы</h6>
+            </div>
+            <div class="custom-row row mt-3">
+                <div class="col-md-6 col-lg-6 description p-5 pe-sm-5 bg-transp mb-3 mb-md-0 rounded animated-element"
+                    data-animation-duration="0.8">
+                    <p align="justify">ALED - уникальный мир аниме светильников, созданных специально для истинных
+                        ценителей японской культуры! Наши светильники это не просто предметы освещения а настоящие
+                        произведения искусства, воплощающие в жизнь мечты и фантазии поклонников аниме.</p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 offset-lg-1 offset-md-1">
+                    <div class="row">
+                        <div class="animated-element custom-row features col-md-5 col-sm-5 bg-transp mb-3 rounded d-flex align-items-center justify-content-center flex-column"
+                            data-animation-duration="0.8">
+                            <div
+                                class="card-circle d-flex align-items-center justify-content-center mt-4 p-5 rounded-circle">
+                                <i class="custom-fa fa-solid fa-medal"></i>
+                            </div>
+                            <p class="text-center mt-4 h5 fw-bold pb-4">Качество</p>
+                        </div>
+                        <div class="animated-element features col-md-5 col-sm-5 offset-0 offset-sm-2 offset-md-1 bg-transp mb-3 rounded d-flex align-items-center justify-content-center flex-column"
+                            data-animation-duration="0.8">
+                            <div
+                                class="card-circle d-flex align-items-center justify-content-center mt-4 p-5 rounded-circle">
+                                <i class="custom-fa fa-solid fa-bolt"></i>
+                            </div>
+                            <p class="text-center mt-4 h5 fw-bold pb-4">Экономия</p>
+                        </div>
+                        <div class="animated-element features col-md-5 col-sm-5 bg-transp rounded d-flex align-items-center justify-content-center flex-column mb-3 mb-sm-0"
+                            data-animation-duration="0.8">
+                            <div
+                                class="card-circle d-flex align-items-center justify-content-center mt-4 p-5 rounded-circle">
+                                <i class="custom-fa fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-center mt-4 h5 fw-bold pb-4">Гарантии</p>
+                        </div>
+                        <div class="animated-element features col-md-5 col-sm-5 offset-0 offset-sm-2 offset-md-1 bg-transp rounded d-flex align-items-center justify-content-center flex-column"
+                            data-animation-duration="0.8">
+                            <div
+                                class="card-circle d-flex align-items-center justify-content-center mt-4 p-5 rounded-circle">
+                                <i class="custom-fa fa-solid fa-dollar-sign"></i>
+                            </div>
+                            <p class="text-center mt-4 h5 fw-bold pb-4">Цена</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instruction" class="mb-3">
+            <div id="info-instruction"
+                class="animated-element d-flex flex-column align-items-center justify-content-center mt-4"
+                data-animation-duration="0.8">
+                <h2 class="text-uppercase fw-bold text-center">Инструкция по заказу</h2>
+                <h6 class="text-custom text-uppercase fw-bold">аниме-светильника</h6>
+            </div>
+            <div class="accordion pt-3" id="accordionFlushExample">
+                <div class="accordion-item animated-element" data-animation-duration="0.8">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Выберите дизайн:
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">При выборе аниме светильника, учтите свои интересы и стиль
+                            помещения. Выберите дизайн, вдохновленный вашими любимыми аниме или персонажами, чтобы
+                            добавить уникальный акцент и атмосферу в интерьер.</div>
+                    </div>
+                </div>
+                <div class="accordion-item animated-element" data-animation-duration="0.8">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Определитесь с размером
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Выберите размер и форму светильника, которые соответствуют вашим
+                            предпочтениям и потребностям. Размер светильника влияет на его освещение и визуальное
+                            воздействие в помещении, поэтому учитывайте размеры комнаты и место, где он будет
+                            установлен.</div>
+                    </div>
+                </div>
+                <div class="accordion-item animated-element" data-animation-duration="0.8">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Уточните стоймость:
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Попросите продавца предоставить вам полную информацию о стоимости
+                            изготовления кастомного аниме светильника, включая цену материалов, работы и доставки. Также
+                            уточните ожидаемое время выполнения заказа.</div>
+                    </div>
+                </div>
+                <div class="accordion-item animated-element" data-animation-duration="0.8">
+                    <h2 class="accordion-header" id="flush-headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapsefour" aria-expanded="false"
+                            aria-controls="flush-collapsefour">
+                            Согласуйте дизайн:
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Перед оформлением заказа удостоверьтесь, что все дизайнерские
+                            решения и детали соответствуют вашим пожеланиям. Попросите продавца предоставить макеты
+                            будущего светильника для одобрения.</div>
+                    </div>
+                </div>
+                <div class="accordion-item animated-element" data-animation-duration="0.8">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapsefive" aria-expanded="false"
+                            aria-controls="flush-collapsefive">
+                            Получите светильник и проверьте качество:
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">После завершения заказа внимательно проверьте качество светильника и
+                            его соответствие вашим ожиданиям. Если есть какие-либо замечания или несоответствия,
+                            сообщите об этом продавцу и договоритесь о способах их устранения.</div>
+                    </div>
+                </div>
+                <div class="accordion-item animated-element" data-animation-duration="0.8">
+                    <h2 class="accordion-header" id="flush-headingsix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                            Наслаждайтесь вашим кастомным светильником:
+                        </button>
+                    </h2>
+                    <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">После успешного завершения заказа разместите свой кастомный аниме
+                            светильник в вашем интерьере и наслаждайтесь его уникальным дизайном и функциональностью.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="order" class="bg-transp mt-3 p-5 mb-4">
+        <div class="animated-element container" data-animation-duration="0.8">
+            <h3 class="text-uppercase fw-bold">Вы затрудняетесь в выборе дизайна светильника!</h3>
+            <p>Напишите нам, и мы поможем вам!</p>
+            <button class="btn btn-primary btn-fill-custom" onclick="document.location='https:\\wa.me/+77074829370'"><i
+                    class="pe-2 fa-solid fa-signature"></i>Написать</button>
+        </div>
+    </section>
+    <div class="container">
+        <section id="Price" class="mb-3">
+            <div id="info-price"
+                class="animated-element d-flex flex-column align-items-center justify-content-center mt-3"
+                data-animation-duration="0.8">
+                <h2 class="text-uppercase fw-bold text-center">Сколько стоят наши услуги?</h2>
+                <h6 class="text-custom text-center text-uppercase fw-bold">В зависимости от дизайна и размера</h6>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 mb-4">
+                    <div class="animated-element bg-transp rounded p-4 custom-card-price" data-animation-duration="0.8">
+                        <h3>Дизайн</h3>
+                        <p>Срок разработки дизайна составляет обычно 3-4 дня. Если у вас уже есть собственный дизайн,
+                            этот этап может занять 4-5 дней, так как нам потребуется время для его анализа и адаптации.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="animated-element bg-transp rounded p-4 custom-card-price" data-animation-duration="0.8">
+                        <h3>Размер</h3>
+                        <p>Цена наших кастомных светильников зависит от их размера. Чем больше светильник, тем выше его
+                            стоимость. Мы предоставляем гибкость в выборе размера, чтобы удовлетворить ваши потребности.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="animated-element bg-transp rounded p-4" data-animation-duration="0.8">
+                        <p>Пожалуйста, обратитесь к нашим представителям, чтобы получить бесплатную консультацию и
+                            оценку стоимости вашего кастомного светильника.</p>
+                        <button class="btn btn-primary btn-fill-custom"
+                            onclick="document.location='https:\\wa.me/+77074829370'">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="review" class="animated-element" data-animation-duration="0.8">
+            <div id="info-review"
+                class="animated-element d-flex flex-column align-items-center justify-content-center mt-3"
+                data-animation-duration="0.8">
+                <h2 class="text-uppercase fw-bold">Отзывы</h2>
+                <h6 class="text-custom text-uppercase fw-bold">Что говорят наши клиенты</h6>
+            </div>
+            <div class="rounded mt-3">
+                <div id="review-slider">
+                    <div class="slide">
+                        <div class="review-card card me-3 p-4 d-flex align-items-center justify-content-center">
+                            <div>
+                                <i class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i>
+                                <div class="card-content mt-3">
+                                    <p>Пришла!
+                                        Проверили, все работает, все в
+                                        порядке
+                                        Ему понравилось
+                                        Спасибо вам большое ещё раз!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="review-card card me-3 p-4 d-flex align-items-center justify-content-center">
+                            <div>
+                                <i class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i>
+                                <div class="card-content mt-3">
+                                    <p>Спасибо вам большое
+                                        светильники приехал очень
+                                        хороший просто бомба. Удачи
+                                        вам да прибудет с вами Аниме!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="review-card card me-3 p-4 d-flex align-items-center justify-content-center">
+                            <div>
+                                <i class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i>
+                                <div class="card-content mt-3">
+                                    <p>Здравствуйте!
+                                        Человеку, которому я подарила
+                                        очень понравилось
+                                        И мне тоже
+                                        Получили все в сохранности!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="review-card card me-3 p-4 d-flex align-items-center justify-content-center">
+                            <div>
+                                <i class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i>
+                                <div class="card-content mt-3">
+                                    <p>Светильник получили. В живую
+                                        вообще бомба
+                                        Все дошло в целости и
+                                        сохранности.
+                                        Спасибо за
+                                        оперативность!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="review-card card me-3 p-4 d-flex align-items-center justify-content-center">
+                            <div>
+                                <i class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i>
+                                <div class="card-content mt-3">
+                                    <p>Пришла!
+                                        Проверили, все работает, все в
+                                        порядке
+                                        Ему понравилось
+                                        Спасибо вам большое ещё раз!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="review-card card me-3 p-4 d-flex align-items-center justify-content-center">
+                            <div>
+                                <i class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i><i
+                                    class="fa-solid fa-star text-custom"></i>
+                                <div class="card-content mt-3">
+                                    <p>Огромное спасибо за вашу
+                                        работу, вышло реально круто,
+                                        думаю не раз ещё закажу!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="progress w-100 custom-mx-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                    <div class="progress-bar" style="width: 0%" id="slider-progress"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer" class="text-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-uppercase fw-bold">Aled</h2>
+                    <p>Наши светильники это не просто предметы освещения, а настоящие произведения искусства.</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-md-center flex-column">
+                    <p class="text-uppercase fw-bold">&copy; Сайт Aled</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/aled_kz/"><i
+                                class="fab fa-instagram me-2 fa-2xl custom-fa"></i></a>
+                        <a href="https://wa.me/+77074829370"><i class="fab fa-whatsapp fa-2xl custom-fa"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-md-end">
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link fw-bold" href="#products-slider">Светильники</a></li>
+                        <li><a class="nav-link fw-bold" href="#Lamps-desc">Светильники в стиле аниме</a></li>
+                        <li><a class="nav-link fw-bold" href="#about">О нас</a></li>
+                        <li><a class="nav-link fw-bold" href="#instruction">Инструкция по заказу</a></li>
+                        <li><a class="nav-link fw-bold" href="#order">Заказать</a></li>
+                        <li><a class="nav-link fw-bold" href="#Price">Сколько стоят наши услуги</a></li>
+                        <li><a class="nav-link fw-bold" href="#review">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <!-- https://t.me/Zxcghouldeadinslde, almasmurat439@gmail.com
+    https://t.me/bestsedative, endgamerule@gmail.com-->
+    <script src="fontawesome/js/all.js"></script>
+    <script src="js/sweetalert2.js"></script>
+    <script src="js/slick_slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/main3.js"></script>
+</body>
+
+</html>

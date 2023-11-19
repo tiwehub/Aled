@@ -1,0 +1,137 @@
+/* BODY*/
+body {
+     background-color: #10002D;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__inner {
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo__title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.navbar {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav__links {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+
+    transition: color .2s linear;
+}
+div.btnSec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 155px;
+}
+
+.nav__links::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav__links:first-child {
+    margin-left: 0;
+}
+.nav__links:hover{
+    color: #fce38a;
+}
+.nav__links:hover::after {
+    opacity: 1;
+}
+.nav__icons {
+    color: #fff;
+    margin-left: 12px;
+}
+.nav__icons:first-child {
+    margin-left: 16px;
+}
+.nav__icons:active {
+    color: #fce38a;
+}
+#learn_more {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border: 3px solid #fff;
+    
+    margin-top: 50px;
+    padding: 12px 30px;
+
+    transition: all .1s linear;
+}
+#learn_more:hover {
+    color: #fce38a;
+    background-color: #fff;
+}
+
+.alls{
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.all{
+    background-color: #545468;
+	position: relative;
+	box-shadow: 0 5px 10px rgb(255, 251, 251);
+	transition: all .09s ease-out;
+}
+.all:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.968);
+	transform: scale(1.05);
+}
